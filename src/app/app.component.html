@@ -1,0 +1,15 @@
+<h1>{{ title | titlecase }}</h1>
+<p>{{ cantidad | currency }}</p>
+
+<img [src]="imagenUrl" alt="Gatito">
+
+<p>El total es {{ cantidad }}</p>
+
+<button (click)="incrementar(monto)">Incrementar</button>
+
+<input [(ngModel)]="title" placeholder="Edita el título" />
+<p>Nuevo título: <strong>{{ title }}</strong></p>
+
+<div *ngFor="let item of items; let i = index">
+  <p *ngIf="item.activo">{{ i }}: {{ item.nombre }} {{item.activo}} </p>
+</div>
