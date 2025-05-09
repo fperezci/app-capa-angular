@@ -1,5 +1,5 @@
-## Angular 14  Nivel  Básico   (Parte 1)
-# Introducción a Angular y Estructura SPA
+# Angular 14  Nivel  Básico   (Parte 1)
+## Introducción a Angular y Estructura SPA
 Framework front-end  
 Accelerate your essence  
 Single Page Applications (SPA)
@@ -10,7 +10,7 @@ Accelerate your essence
 Angular fue creado por Misko Hevery en 2009 como AngularJS, un framework para apps web dinámicas. En 2016, se reescribió como Angular 2 en TypeScript, iniciando el Angular moderno. Angular 14 (2022) trajo mejoras como componentes independientes y formularios tipados. Es mantenido por Google y ampliamente usado en aplicaciones web escalables.
 
 ## ¿Cómo funciona Angular?  
-# Componentes, Servicios, Módulos, Directivas, Pipes, Routing  
+### Componentes, Servicios, Módulos, Directivas, Pipes, Routing  
 Accelerate your essence  
 TypeScript como base  
 Estructura basada en módulos  
@@ -21,14 +21,14 @@ Servicios e Inyección de Dependencias
 Standalone Components (Novedad en Angular 14)  
 Compilación Ahead-of-Time (AOT)
 
-## Componentes  
+### Componentes  
 Es la unidad básica  
 Es la parte visible en pantalla o una funcionalidad específica  
 Cada componente tiene: HTML (vista), CSS (estilo) y TypeScript (lógica)  
 Ejemplo: Un componente Home que muestra la página de inicio.  
 Analogía: Son como piezas de LEGO que juntas forman toda la aplicación.  
 
-## Servicios  
+### Servicios  
 Clases que contienen lógica de negocio o funciones reutilizables.  
 No tienen interfaz visual (no son vistas).  
 Se usan para:  
@@ -38,7 +38,7 @@ Se usan para:
 Se inyectan a los componentes mediante inyección de dependencias.  
 Analogía: Son como los “cerebros” o “ayudantes” invisibles que trabajan tras bambalinas.  
 
-## Módulos  
+### Módulos  
 Son agrupadores lógicos de componentes, servicios y otros elementos.  
 Cada aplicación Angular tiene al menos un módulo raíz (AppModule).  
 Puedes crear módulos de funcionalidades (UsersModule, DashboardModule, etc.) para organizar mejor.  
@@ -47,14 +47,14 @@ Permiten:
 - Optimizar la carga con Lazy Loading  
 Analogía: Son como carpetas o cajones donde guardas piezas relacionadas.  
 
-## Directivas  
+### Directivas  
 Son instrucciones que modifican el comportamiento o la apariencia de elementos en el DOM.  
 Hay 2 tipos principales:  
 - Estructurales: Modifican el DOM (agregan, quitan elementos). Ej: *ngIf, *ngFor  
 - Atributo: Cambian apariencia o comportamiento sin alterar la estructura. Ej: [ngClass], [ngStyle]  
 Analogía: Son como "órdenes" que das a los elementos HTML para que se comporten de cierta forma  
 
-## Pipe  
+### Pipe  
 Son transformadores de datos para mostrar resultados de manera amigable en la vista.  
 Usados en el template para:  
 - Formatear fechas (date)  
@@ -63,14 +63,14 @@ Usados en el template para:
 También puedes crear pipes personalizados.  
 🔹 Analogía: Son como "filtros" que aplicas antes de mostrar algo.  
 
-## Routing  
+### Routing  
 Es el sistema de navegación entre vistas o componentes.  
 Define rutas (/home, /contacto, /productos/1) y a qué componente corresponden.  
 Permite cargar páginas diferentes sin recargar toda la aplicación (SPA).  
 Usa el módulo RouterModule para su configuración.  
 🔹 Analogía: Es como un GPS que te dice a qué parte de la app debes ir.  
 
-## Estructura del proyecto  
+### Estructura del proyecto  
 src/ Código fuente principal de la aplicación  
 src/app/ Contiene los componentes, servicios y módulos de la aplicación  
 src/assets/ Recursos estáticos  
@@ -84,9 +84,9 @@ Angular CLI (Command Line Interface) es una herramienta oficial de Angular que s
 - Mantiene el proyecto consistente  
 - Viene preparado para integrar testing, linting y optimización de builds  
 
-## Ventajas  
+### Ventajas  
 
-## Comandos útiles  
+### Comandos útiles  
 `ng new nombre-proyecto`  
 Crear un nuevo proyecto con una sola línea  
 
@@ -121,8 +121,9 @@ Construir el proyecto para producción
 `ng test`  
 Ejecutar pruebas
 
-## Cuidemos el código  
-# Buenas prácticas  
+## Cuidemos el código
+  
+## Buenas prácticas  
 
 - Usa componentes pequeños y reutilizables  
 - Separa lógica en servicios  
@@ -144,7 +145,7 @@ Ejecutar pruebas
 "@types/node": "^16.18.50"
 
 ## ¿Algo anda mal?  
-# Errores comunes y soluciones  
+### Errores comunes y soluciones  
 
 - **TS2502**: Conflicto con @types/node recientes  
   - Solución: Fijar "@types/node": "^16.18.50" en package.json  
