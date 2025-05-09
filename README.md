@@ -49,3 +49,10 @@ Ir a tsconfig.json y seccion "angularCompilerOptions", ingresamos​
 
 ## levantamos el servidor​
 - ng serve
+
+# Si has clonado este proyecto
+ir a la carpeta app-capa-angular e instala los modulos con npm
+- npm install
+
+luego levanta el servidor
+- ng serve
